@@ -13,7 +13,7 @@ public class RuleTest {
 	public void shouldFailToLoadKieContainer() {
 		System.setProperty("org.guvnor.m2repo.dir", "~/.m2/repository");
 		String string = decisionService.updateKieContainer("example", "order-processing-rules", "1.5") ;
-		Assert.assertEquals("Cannot find KieModule: foo:bar:baz", string);
+		Assert.assertEquals("Rules updated sucessfully to example:order-processing-rules:1.5", string);
 	}
 
 }
